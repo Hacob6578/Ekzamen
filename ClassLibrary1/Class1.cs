@@ -9,20 +9,20 @@ namespace ClassLibrary1
 {
     public class Garden
     {
-        public string Adress { get; set; }
+        public string Adress { get; set; } 
         public string Owner { get; set; }
         public string Flowers { get; set; }
         public List<Flower> Library = new List<Flower>();
-        public Garden(string add, string own, string flw)
+        public Garden(string add, string own, string flw) 
         {
             Adress = add;
             Owner = own;
             Flowers = flw;
         }
-        
+        //Феткулин Вадим
         public void ShowAll()
         {
-            Console.WriteLine("Сад:\n" + $"\tАдресс: {Adress}\n" + $"\tВладелец: {Owner}\n" + $"\tЦветок: {Flowers}\n");
+            Console.WriteLine("Сад:\n" + $"\tАдресс: {Adress}\n" + $"\tВладелец: {Owner}\n" + $"\tЦветок: {Flowers}\n"); //Прописал как будет выглядеть вывод
             Library.Sort();
             foreach (Flower flower in Library)
             {
@@ -31,7 +31,7 @@ namespace ClassLibrary1
         }
     }
 
-
+    //Феткулин Вадим
     public class Flower : IComparable
     {
         public string Title { get; set; }
@@ -44,7 +44,7 @@ namespace ClassLibrary1
         }
         public void Show()
         {
-            Console.WriteLine("Цветок:\n" + $"\tНазвание: {Title}\n" + $"\tОписание: {Description}");
+            Console.WriteLine("Цветок:\n" + $"\tНазвание: {Title}\n" + $"\tОписание: {Description}"); //Прописал как будет выглядеть вывод
         }
         public int CompareTo(object obj)
         {
@@ -52,3 +52,4 @@ namespace ClassLibrary1
         }
     }
 }
+//Феткулин В.В.

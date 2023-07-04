@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ClassLibrary1;
-
+//Феткулин Вадим
 namespace ConsoleApp1
 {
     internal class Program
@@ -27,7 +27,9 @@ namespace ConsoleApp1
             garden2.ShowAll();
             garden3.ShowAll();
             garden4.ShowAll();
-            Console.ReadKey();            
+            Console.ReadKey();
+            //тут в общем показан вывод всего написанного
         }
     }
 }
+//Феткулин Вадим
